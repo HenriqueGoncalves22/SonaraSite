@@ -1,0 +1,201 @@
+
+/*============= ELEMENTOS PADRÃO/PAI =============*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header{
+    display: grid;
+}
+
+header > * {
+    grid-area: 1 / 1;
+}
+
+h1{
+    font-size: 96px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--purple);
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover{
+    color: white;
+    background-color: var(--purple);
+    cursor: pointer;
+    border: none;
+}
+
+/*============= ELEMENTOS PERSONALIZADOS/FILHOS =============*/
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.navbar img{
+    width: 100px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+.navbar ul li{    
+    display: inline;
+    padding: 16px;
+    font-size: 20px;    
+}
+
+.navbar ul li a{ 
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s ease-in;
+}
+
+.navbar ul li a:hover{    
+    font-size: 19px;
+    color: rgb(240, 64, 64);
+}
+
+#banner{
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.907) 2%,
+            rgba(0, 0, 0, .25) 12%,
+            rgba(0, 0, 0, 0) 26%
+        ),url(../../assets/banner.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 40px;
+}
+
+#banner h1 span{
+    font-size: 96px;
+    -webkit-text-stroke: 1px white;
+    color: rgba(95, 158, 160, 0);
+}
+
+/* --------- HERO ----------*/
+
+#hero{
+    margin: 64px 16px 64px 24px;
+    display: flex;
+    height: max-content;
+    width: auto;
+}
+
+#hero img{
+    width: 80vw;
+    height: auto;
+    margin-right: 32px;
+}
+
+#hero p{
+    margin: 16px 40px 0px 16px;
+}
+
+#hero h2{
+    margin-top: 40px;
+}
+
+#hero button{
+    margin: 24px 0px 0px 16px;
+}
+
+/* --------- CARDS ----------*/
+
+#courses{
+    margin: 16px;    
+}
+
+#cardsGroup{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    border-radius: 20px;
+    margin: 12px;
+    width: 400px;
+    height: 75vh;
+    text-align: center;
+    align-content: center;
+}
+
+.card p{
+    display: none;
+}
+
+.card h2{
+    margin: 16px;
+    color: white;
+    font-size: 64px;
+    display: block;
+    cursor: pointer;
+}
+
+.card:hover{
+    align-content: flex-start;
+    margin: 6px;
+    width: 450px;
+    height: 78vh;
+}
+
+.card:hover h2{
+
+}
+
+
+
+@media (min-width: 1400px) {
+    /* ----- HERO ------*/
+
+#hero img{
+    width: 2000px;
+    height: auto;
+    margin: 0px 32px 0px;
+}
+
+#hero p{
+    margin: 16px 80px 0px 16px;
+}
+
+#hero h2{
+    margin-top: 60px;
+}
+
+#hero button{
+    margin: 24px 0px 0px 16px;
+}
+}
