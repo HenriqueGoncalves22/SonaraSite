@@ -1,0 +1,62 @@
+
+#courses h2 {
+    padding: 48px 28px 28px 56px;
+    background-color: var(--purple);
+    color: white;
+
+}
+
+#cardsGroup {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    justify-items: center;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-areas: "overlay";
+    width: 20vw;
+    height: 40vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.card h4 {
+    grid-area: overlay;
+    align-self: end;
+    justify-self: left;
+    background-color: var(--purple200);
+    z-index: 1;
+    font-size:xx-large;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 0px 12px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.card:hover {
+    filter: brightness(1.2);
+    width: 21vw;
+    height: 41vh;
+    border-right: 5px solid var(--purple);
+    border-bottom: 5px solid var(--purple);
+}
+
+.card:hover h4{
+    background-color: var(--purple);
+    transition: all 1s ease;
+    font-size: 35px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+
+}

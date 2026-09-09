@@ -1,0 +1,59 @@
+#course h2{
+    color: white;
+   padding: 24px;
+   background-color: var(--purple200);
+}
+
+#courseContent{
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+
+#courseContent img{
+  float: left;
+  height: 50vh;
+  width: auto;
+  border-radius:80px;
+}
+
+#courseTable{
+   border-collapse: collapse;
+   margin: 0 0 16px 16px;
+}
+
+#courseTable td{
+ border: 1px solid black;
+ padding: 8px 8px;
+ width: 17vw;
+}
+
+#courseDescription{
+    margin: 24px 0 0 0;
+    white-space: pre-line;
+}
+
+#teacherGroup{
+    padding: 8px;
+    display: flex;
+}
+
+#teacherGroup img, #teacherGroup h5{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 16px;
+}
+
+#teacherContent{
+    margin-left: 50px;
+}
+
+#teacherContent h4{
+    font-weight: 400;
+
+}

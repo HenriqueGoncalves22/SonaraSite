@@ -1,0 +1,76 @@
+/* -------------- FOOTER ---------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: 18vw 40vw 20vw 20vw;
+    grid-template-rows: 30vh 8vh;
+    background-color: var(--gray200);
+    color: whitesmoke;
+    padding: 48px 0px 0px 0px;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 32apx;
+    font-size: 18px;
+}
+
+footer ul li {
+    margin-left: 12px;
+    list-style: none;
+    font-weight: 300;
+}
+
+footer ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#logoFooter{
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: 100px;
+}
+
+#contactFooter {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+#menuFooter {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0px 56px 0px 32px;
+}
+
+#menuFooter ul a:hover {
+    font-weight: 500;
+}
+
+#socialMediaFooter {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
+}
+
+#socialMediaFooter a svg {
+    margin: 8px;
+    color: rgb(255, 255, 255);
+    height: 32px;
+    width: auto;
+    transition: all 2ms ease;
+}
+
+#socialMediaFooter a:hover svg {
+    height: 36px;
+}
+
+
+#copyrightFooter {
+    grid-column: span 2;
+    grid-row: 2;
+    margin-bottom: 0%;
+    align-self: end;
+}

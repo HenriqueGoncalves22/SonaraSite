@@ -1,95 +1,10 @@
 
-/*============= ELEMENTOS PADRÃO/PAI =============*/
 
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-header{
-    display: grid;
-}
-
-header > * {
-    grid-area: 1 / 1;
-}
-
-h1{
-    font-size: 96px;
-    font-weight: 400;
-}
-
-h2{
-    font-size: 52px;
-    font-weight: 400;
-    color: var(--purple);
-}
-
-h3{
-    font-size: 32px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-
-button{
-    width: 120px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: white;
-}
-
-button:hover{
-    color: white;
-    background-color: var(--purple);
-    cursor: pointer;
-    border: none;
-}
-
-/*============= ELEMENTOS PERSONALIZADOS/FILHOS =============*/
-
-.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-.navbar img{
-    width: 100px;
-    height: 30px;
-    margin-left: 12px;
-}
-
-.navbar ul li{    
-    display: inline;
-    padding: 16px;
-    font-size: 20px;    
-}
-
-.navbar ul li a{ 
-    text-decoration: none;
-    color: white;
-    transition: all 0.1s ease-in;
-}
-
-.navbar ul li a:hover{    
-    font-size: 19px;
-    color: rgb(240, 64, 64);
-}
-
-#banner{
-    background-image: linear-gradient(
-            to bottom,
+#banner {
+    background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.907) 2%,
             rgba(0, 0, 0, .25) 12%,
-            rgba(0, 0, 0, 0) 26%
-        ),url(../../assets/banner.jpg);
+            rgba(0, 0, 0, 0) 26%), url(../../assets/banner.jpg);
     background-size: cover;
     min-height: 100vh;
     justify-content: center;
@@ -99,103 +14,297 @@ button:hover{
     padding-left: 40px;
 }
 
-#banner h1 span{
+#banner h1 span {
     font-size: 96px;
     -webkit-text-stroke: 1px white;
     color: rgba(95, 158, 160, 0);
 }
 
-/* --------- HERO ----------*/
+/* ------------- HERO --------------*/
 
-#hero{
+#hero {
     margin: 64px 16px 64px 24px;
     display: flex;
     height: max-content;
     width: auto;
 }
 
-#hero img{
+#hero img {
     width: 80vw;
     height: auto;
     margin-right: 32px;
 }
 
-#hero p{
+#hero p {
     margin: 16px 40px 0px 16px;
 }
 
-#hero h2{
+#hero h2 {
     margin-top: 40px;
 }
 
-#hero button{
+#hero button {
     margin: 24px 0px 0px 16px;
 }
 
-/* --------- CARDS ----------*/
+/* -------------- COURSES ---------------*/
 
-#courses{
-    margin: 16px;    
+#courses {
+    background-image: url(../../assets/fundo_coursesSection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
-#cardsGroup{
+#courses h2 {
+    margin: 28px 28px 28px 56px;
+}
+
+#cardsGroup {
     justify-content: center;
+    display: flex;
+}
+
+.card a {
+    display: grid;
+    grid-template-areas: "overlay";
+    text-decoration: none;
+}
+
+.card a img {
+    border-radius: 20px;
+    margin: 16px;
+    width: 18vw;
+    height: 34vh;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    grid-area: overlay;
+    transition: filter 0.5s ease, border-color 0.4s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.card h3 {
+    text-align: center;
+    z-index: 1;
+    grid-area: overlay;
+    align-self: center;
+    margin: 16px;
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.card a:hover img{
+    filter: brightness(1.2);
+    align-content: flex-start;
+    height: 35vh;
+    border-right: 5px solid var(--purple200);
+    border-bottom: 5px solid var(--purple200);
+}
+
+#courses button {
+    margin: 24px;
+    width: 200px;
+    align-self: center;
+}
+
+#courses button a {
+    text-decoration: none;
+}
+
+#courses button:hover a {
+    color: white;
+}
+
+/* -------------- METHODOLOGY ---------------*/
+
+#methodology {
+    background-color: var(--purple);
+    padding: 48px;
     display: flex;
     flex-direction: row;
 }
 
-.card{
-    border-radius: 20px;
-    margin: 12px;
-    width: 400px;
-    height: 75vh;
-    text-align: center;
-    align-content: center;
-}
-
-.card p{
-    display: none;
-}
-
-.card h2{
-    margin: 16px;
+#methodology p {
+    font-weight: 200;
     color: white;
-    font-size: 64px;
-    display: block;
-    cursor: pointer;
+    font-size: 20px;
 }
 
-.card:hover{
-    align-content: flex-start;
-    margin: 6px;
-    width: 450px;
-    height: 78vh;
+#methodology img {
+    border-radius: 15px;
+    margin-right: 32px;
+    object-fit: cover;
+    object-position: top;
+    width: 75vw;
+    height: 52vh;
 }
 
-.card:hover h2{
+#methodology h2 {
+    color: white;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
 
+.cardMethodology {
+    display: flex;
+    flex-direction: column;
+    color: rgb(230, 230, 230);
+    padding: 4px;
+    width: 47%;
+    height: 20%;
+    border-radius: 12px;
+    border: 1px solid rgb(217, 217, 217);
+    margin: 16px 12px 0px 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.cardMethodology h5,
+.cardMethodology p,
+.cardMethodology i,
+.cardMethodology svg {
+    color: white;
+}
+
+.cardMethodology:hover h5,
+.cardMethodology:hover p,
+.cardMethodology:hover i,
+.cardMethodology:hover svg {
+    color: var(--purple) !important;
+}
+
+.cardMethodology:hover {
+    background-color: white;
+}
+
+.cardMethodology p {
+    margin-left: 8px;
+}
+
+.cardMethodology h5 {
+    padding: 12px;
+}
+
+/* -------------- PRESENTATION ---------------*/
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation h2 {
+    margin: 48px 0px 24px 32px;
+}
+
+#presentationGrid {
+    display: grid;
+    grid-template-columns: 75vw 25vw;
+    grid-template-rows: 50vh 50vh;
+    overflow: hidden;
+}
+
+#topImages {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 46vw 29vw;
+    grid-template-rows: 50vh;
+    width: 75vw;
+    height: 50vh;
+}
+
+#topImages img,
+#bottomImages img,
+#image3 {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#image1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#image2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#image3 {
+    width: 100%;
+    height: 100vh;
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
+#bottomImages {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 21vw 54vw;
+    width: 75vw;
+    height: 50vh;
+}
+
+
+#image4 {
+    grid-column: 1;
+    grid-row: 1;
+    height: 50vh;
+}
+
+#image5 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 50vh;
 }
 
 
 
-@media (min-width: 1400px) {
-    /* ----- HERO ------*/
+@media (max-width: 1440px) {
+    /* ---------- HERO -----------*/
 
-#hero img{
-    width: 2000px;
-    height: auto;
-    margin: 0px 32px 0px;
-}
+    #hero img {
+        width: 2000px;
+        height: auto;
+        margin: 0px 32px 0px;
+    }
 
-#hero p{
-    margin: 16px 80px 0px 16px;
-}
+    #hero p {
+        margin: 16px 80px 0px 16px;
+    }
 
-#hero h2{
-    margin-top: 60px;
-}
+    #hero h2 {
+        margin-top: 60px;
+    }
 
-#hero button{
-    margin: 24px 0px 0px 16px;
-}
+    #hero button {
+        margin: 24px 0px 0px 16px;
+    }
+
+    /* ---------- COURSES -----------*/
+
+    .card img {
+        width: 17vw;
+    }
+
+    .card a:hover img {
+        width: 18vw;
+    }
+
+    /* ---------- METHODOLOGY -----------*/
+
+    #methodology h2 {
+        margin-top: 12px;
+    }
+
+
+    #methodology img {
+        width: 100vw;
+        height: 52vh;
+    }
+
 }

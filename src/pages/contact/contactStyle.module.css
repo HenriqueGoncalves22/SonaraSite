@@ -1,0 +1,176 @@
+#contact {
+    width: 100%;
+}
+
+
+/* HERO */
+
+#contactHero {
+    min-height: 35vh;
+
+    display: grid;
+    place-content: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: white;
+    background-color: var(--purple200);
+}
+
+#contactHero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#contactHero p {
+    font-size: 1.2rem;
+}
+
+
+/* CONTEÚDO */
+
+#contactContent {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    padding: 80px 10%;
+}
+
+
+/* FORM */
+
+#contactForm {
+    display: grid;
+
+    gap: 10px;
+}
+
+#contactForm h2 {
+    margin-bottom: 20px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 14px;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#contactForm textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+#contactForm button {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--purple200);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    opacity: 0.9;
+}
+
+
+/* INFORMAÇÕES */
+
+#contactInfo {
+    display: grid;
+    align-content: start;
+
+    gap: 25px;
+}
+
+.infoItem {
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+.infoItem span {
+    font-size: 1.8rem;
+}
+
+.infoItem h3 {
+    margin: 0 0 5px;
+}
+
+.infoItem p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* MAPA */
+
+#mapSection {
+    padding: 70px 10%;
+
+    text-align: center;
+
+    background-color: #f5f5f5;
+}
+
+#map {
+    min-height: 350px;
+
+    display: grid;
+    place-items: center;
+
+    margin-top: 30px;
+
+    background-color: #ddd;
+
+    border-radius: 20px;
+}
+
+
+/* REDES */
+
+#social {
+    padding: 80px 10%;
+
+    text-align: center;
+}
+
+#socialLinks {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+#socialLinks a {
+    text-decoration: none;
+
+    color: var(--purple200);
+
+    font-weight: bold;
+}
