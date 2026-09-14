@@ -13,7 +13,7 @@ function Home() {
         </section>
         <section ></section>
         <section id='hero'>
-          <img src="../../public/assets/sonara-hero.png" alt="" />
+          <img src="assets/sonara-hero.png" alt="" />
           <div>
             <h2>Nossa Inspiração</h2>
             <p> A Sonara nasceu com o propósito de tornar o ensino da música acessível, inspirador e transformador. Mais do que formar músicos, desenvolvemos pessoas por meio de uma metodologia que une técnica, criatividade e prática constante. Nosso compromisso é oferecer um ensino de excelência, conduzido por profissionais qualificados em um ambiente acolhedor, onde cada aluno encontra segurança para evoluir, descobrir seu potencial e construir sua própria identidade musical. </p>
@@ -85,13 +85,13 @@ function Home() {
           <h2>Apresentações</h2>
           <div id='presentationGrid'>
             <div id='topImages'>
-              <img src="./../../public/assets/presentation1.png" alt="" id='image1' />
-              <img src="./../../public/assets/presentation2.png" alt="" id='image2' />
+              <img src="assets/presentation1.png" alt="" id='image1' />
+              <img src="assets/presentation2.png" alt="" id='image2' />
             </div>
-            <img src="./../../public/assets/presentation3.png" alt="" id='image3' />
+            <img src="assets/presentation3.png" alt="" id='image3' />
             <div id='bottomImages'>
-              <img src="./../../public/assets/presentation4.png" alt="" id='image4' />
-              <img src="./../../public/assets/presentation5.png" alt="" id='image5' />
+              <img src="assets/presentation4.png" alt="" id='image4' />
+              <img src="assets/presentation5.png" alt="" id='image5' />
             </div>
           </div>
         </section>
