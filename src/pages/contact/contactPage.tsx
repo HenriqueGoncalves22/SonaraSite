@@ -1,205 +1,48 @@
 import styles from "./contactStyle.module.css";
+import ContactForm from "./contactForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
 
   return (
     <section id={styles.contact}>
-
-      {/* HERO */}
-
       <header id={styles.contactHero}>
-
-        <h1>Entre em Contato</h1>
-
-        <p>
-          Tem alguma dúvida sobre nossos cursos?
-          Fale com a Sonara.
-        </p>
-
+        <h2>Fale Conosco</h2>
       </header>
-
-
-      {/* CONTEÚDO */}
-
       <div id={styles.contactContent}>
-
-
-        {/* FORMULÁRIO */}
-
-        <form id={styles.contactForm}>
-
-          <h2>Envie uma mensagem</h2>
-
-
-          <label htmlFor="name">
-            Nome
-          </label>
-
-          <input
-            id="name"
-            type="text"
-            placeholder="Seu nome"
-          />
-
-
-          <label htmlFor="email">
-            E-mail
-          </label>
-
-          <input
-            id="email"
-            type="email"
-            placeholder="seu@email.com"
-          />
-
-
-          <label htmlFor="subject">
-            Assunto
-          </label>
-
-          <input
-            id="subject"
-            type="text"
-            placeholder="Como podemos ajudar?"
-          />
-
-
-          <label htmlFor="message">
-            Mensagem
-          </label>
-
-          <textarea
-            id="message"
-            placeholder="Digite sua mensagem..."
-          />
-
-
-          <button type="submit">
-            Enviar Mensagem
-          </button>
-
-        </form>
-
-
-        {/* INFORMAÇÕES */}
-
+        <ContactForm />
         <div id={styles.contactInfo}>
-
-          <h2>Fale Conosco</h2>
-
-
-          <div className={styles.infoItem}>
-
-            <span>📍</span>
-
-            <div>
-              <h3>Endereço</h3>
-
-              <p>
-                Rua Exemplo, 123
-                <br />
-                São Paulo - SP
-              </p>
-            </div>
-
+          <div>
+            <h4>Telefone</h4>
+            <p>(11) 99999-9999 </p>
           </div>
-
-
-          <div className={styles.infoItem}>
-
-            <span>📞</span>
-
-            <div>
-              <h3>Telefone</h3>
-
-              <p>
-                (11) 00000-0000
-              </p>
-            </div>
-
+          <div>
+            <h4>E-mail</h4>
+            <p>contato@sonara.com</p>
           </div>
-
-
-          <div className={styles.infoItem}>
-
-            <span>✉️</span>
-
-            <div>
-              <h3>E-mail</h3>
-
-              <p>
-                contato@sonara.com
-              </p>
-            </div>
-
+          <div>
+            <h4>Horário de Atendimento</h4>
+            <p> Segunda a Sexta - 08:00 às 17:00 </p>
           </div>
-
-
-          <div className={styles.infoItem}>
-
-            <span>🕐</span>
-
-            <div>
-              <h3>Horário de Atendimento</h3>
-
-              <p>
-                Segunda a sexta
-                <br />
-                09:00 às 20:00
-              </p>
-            </div>
-
+          <div>
+            <h4>Endereço</h4>
+            <p> Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</p>
           </div>
-
         </div>
-
       </div>
-
-
-      {/* MAPA */}
-
       <section id={styles.mapSection}>
-
-        <h2>Onde Estamos</h2>
-
-        <div id={styles.map}>
-          <p>
-            Mapa do Google Maps
-          </p>
-        </div>
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1941483267256!2d-46.658529923718696!3d-23.561469628799745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c94ae1f7c5%3A0xe96bbcfef4fab736!2sAv.%20Paulista%2C%201578%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200!5e0!3m2!1spt-BR!2sbr!4v1789320431417!5m2!1spt-BR!2sbr" width="1000" height="500" style={{ border: '0', width: '100vw' }} ></iframe>
       </section>
-
-
-      {/* REDES */}
-
       <section id={styles.social}>
-
         <h2>Continue acompanhando a Sonara</h2>
-
-        <p>
-          Acompanhe novidades, eventos e conteúdos
-          relacionados ao mundo da música.
-        </p>
-
-        <div id={styles.socialLinks}>
-
-          <a href="#">
-            Instagram
-          </a>
-
-          <a href="#">
-            YouTube
-          </a>
-
-          <a href="#">
-            Facebook
-          </a>
-
+        <p> Acompanhe novidades, eventos e conteúdos relacionados ao mundo da música.</p>
+        <div className={styles.socialLinks}>
+          <a href="https://www.instagram.com/" target='_blank'><FontAwesomeIcon icon={faInstagram} />Instagram</a>
+          <a href="https://www.facebook.com/" target='_blank'><FontAwesomeIcon icon={faFacebook} />Facebook</a>
+          <a href="https://www.linkedin.com/" target='_blank'><FontAwesomeIcon icon={faLinkedin} />Linkedin</a>
         </div>
-
       </section>
-
     </section>
   );
 }

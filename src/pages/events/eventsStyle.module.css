@@ -1,0 +1,50 @@
+#heroEvents{
+    height: 25vh;
+    justify-content: center;
+    align-content: center;
+    background: url(/public/assets/fundo_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heroEvents h2{
+    color: white;
+}
+
+.show{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.show img{
+    width: 50vw;
+}
+
+.showContent{
+    padding: 24px;
+    align-content: center;
+}
+
+#event p{
+    font-size: clamp(16px, 1.3vw, 22px);
+}
+
+#orchestra{
+
+}
+
+#orchestra img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#orchestraContent{
+    padding: 24px;
+    align-content: center;
+    height: 30vh;
+}
+
+#orchestraContent h3{
+    color: var(--purple);
+}

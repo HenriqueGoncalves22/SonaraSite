@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './homeStyle.css'
@@ -18,7 +17,7 @@ function Home() {
           <div>
             <h2>Nossa Inspiração</h2>
             <p> A Sonara nasceu com o propósito de tornar o ensino da música acessível, inspirador e transformador. Mais do que formar músicos, desenvolvemos pessoas por meio de uma metodologia que une técnica, criatividade e prática constante. Nosso compromisso é oferecer um ensino de excelência, conduzido por profissionais qualificados em um ambiente acolhedor, onde cada aluno encontra segurança para evoluir, descobrir seu potencial e construir sua própria identidade musical. </p>
-            <button>Saiba Mais</button>
+            <Link to={'/quem-somos'}><button>Saiba Mais</button></Link>
           </div>
         </section>
         <section id='courses'>

@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { courses } from "./data/course";
 import { useNavigate } from "react-router-dom";
 import styles from "./coursesListStyle.module.css";

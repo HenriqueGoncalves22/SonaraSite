@@ -3,7 +3,8 @@
     padding: 48px 28px 28px 56px;
     background-color: var(--purple);
     color: white;
-
+    align-self: center;
+    text-align: center;
 }
 
 #cardsGroup {

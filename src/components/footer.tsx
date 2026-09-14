@@ -21,9 +21,9 @@ function FooterComponent(){
           <div id={styles.menuFooter}>
             <h4>Institucional</h4>
             <ul>
-              <li><a href="">Quem Somos</a></li>
-              <li><a href="">Eventos</a></li>
-              <li><a href="">Trabalhe Conosco</a></li>
+              <li><Link to="/quem-somos">Quem Somos</Link></li>
+              <li><Link to="/eventos">Eventos</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
             </ul>
           </div>
           <div id={styles.socialMediaFooter}>

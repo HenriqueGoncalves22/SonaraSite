@@ -1,5 +1,7 @@
 /* -------------- FOOTER ---------------*/
 
+
+
 footer {
     display: grid;
     grid-template-columns: 18vw 40vw 20vw 20vw;
@@ -36,6 +38,10 @@ footer ul li a {
 #contactFooter {
     grid-column: 2;
     grid-row: 1;
+}
+
+#contactFooter h4{
+    padding-left: 10px;
 }
 
 
