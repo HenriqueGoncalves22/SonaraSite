@@ -18,9 +18,7 @@ function ContactForm(){
       setSent(false);
       setError(false);
       try{
-         const response = await fetch(
-          "/.netlify/functions/contact",
-          {
+         const response = await fetch("/.netlify/functions/contact", {
             method: "POST",
             headers:{
               "Content-Tyoe" : "application/json",
