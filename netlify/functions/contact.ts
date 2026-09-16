@@ -20,7 +20,7 @@ const { name, email, subject, message} = await req.json();
 
 const {error} = await transporter.sendMail({
   from: process.env.GMAIL_USER,
-  to: 'henrique.gonc.dev@gmail.com',
+  to: process.env.GMAIL_USER,
   replyTo: email,
   subject: subject,
   html: `
