@@ -73,3 +73,46 @@
     height: 45px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 780px) {
+
+#contactHero {
+    min-height: 15vh;
+}
+
+#contactHero h2, #social h2{
+   font-size: 40px;
+}
+
+#contactContent {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 16px;
+}
+
+#contactInfo h4 {
+    font-size: 24px;
+}
+
+#contactInfo p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#social {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+#social p {
+    font-size: 18px;
+}
+
+}

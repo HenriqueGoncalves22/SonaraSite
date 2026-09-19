@@ -1,5 +1,3 @@
-
-
 #banner {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.907) 2%,
@@ -61,7 +59,8 @@
     margin: 28px 28px 28px 56px;
 }
 
-#cardsGroup {
+#cardsGroup,
+#cardsGroupTop {
     justify-content: center;
     display: flex;
 }
@@ -95,7 +94,7 @@
     cursor: pointer;
 }
 
-.card a:hover img{
+.card a:hover img {
     filter: brightness(1.2);
     align-content: flex-start;
     height: 35vh;
@@ -145,6 +144,10 @@
     color: white;
     margin-top: 48px;
     margin-bottom: 12px;
+}
+
+#cardMethodologyGroup {
+    display: flex;
 }
 
 .cardMethodology {
@@ -264,47 +267,111 @@
 
 
 
-@media (max-width: 1440px) {
-    /* ---------- HERO -----------*/
-
+@media screen and (max-width: 780px) {
     #hero img {
-        width: 2000px;
-        height: auto;
-        margin: 0px 32px 0px;
+        height: 30vh;
     }
 
-    #hero p {
-        margin: 16px 80px 0px 16px;
+    #hero {
+        display: flex;
+        flex-direction: column;
     }
 
-    #hero h2 {
-        margin-top: 60px;
+    #cardsGroup {
+        display: none;
     }
 
-    #hero button {
-        margin: 24px 0px 0px 16px;
+    #cardsGroupTop {
+        display: flex;
+        flex-direction: column;
     }
 
-    /* ---------- COURSES -----------*/
-
-    .card img {
-        width: 17vw;
+    .card a img {
+        width: 90vw;
     }
-
-    .card a:hover img {
-        width: 18vw;
-    }
-
-    /* ---------- METHODOLOGY -----------*/
-
-    #methodology h2 {
-        margin-top: 12px;
-    }
-
 
     #methodology img {
-        width: 100vw;
-        height: 52vh;
+        display: none;
+    }
+
+    #methodology h2 {
+        font-size: 40px;
+    }
+
+    #methodology p {
+        font-size: 16px;
+    }
+
+    #cardMethodologyGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardMethodology {
+        width: 74vw;
+    }
+
+    #presentation h2 {
+        font-size: 40px;
+    }
+
+    #presentationGrid {
+        display: grid;
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: 50vh 50vh;
+        overflow: hidden;
+    }
+
+
+    #topImages {
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows: 50vh;
+        width: 75vw;
+        height: 50vh;
+    }
+
+    #topImages img,
+    #bottomImages img,
+    #image3 {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    #image1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #image3 {
+        width: 100%;
+        height: 100vh;
+        grid-column: 2;
+        grid-row: 1/2;
+    }
+
+    #bottomImages {
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 70vw;
+        width: 75vw;
+        height: 50vh;
+    }
+
+
+    #image4,
+    #image2 {
+        display: none;
+    }
+
+    #image5 {
+        grid-column: 1;
+        grid-row: 2;
+        height: 50vh;
     }
 
 }

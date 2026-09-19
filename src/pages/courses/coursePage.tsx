@@ -14,7 +14,6 @@ function CoursePage() {
 
   const teacher = teachers.filter((teacher) => course.teacherId.includes(teacher.id));
 
-
   return (
     <section id={styles.course}>
       <h2>{course.name}</h2>
@@ -24,7 +23,7 @@ function CoursePage() {
           <p>{course.description}</p>
         </div>
       </div>
-      <div style={{ display: 'flex' }}>
+      <div id={styles.additionalContent}>
         <table id={styles.courseTable}>
           <tbody>
             <tr><td><strong>Faixa Etária</strong></td><td>{course.classification}</td></tr>
@@ -37,7 +36,7 @@ function CoursePage() {
           <h4>Professores</h4>
           <div id={styles.teacherGroup}>
             {teacher.map((teacher) =>
-              <div key={teacher.id}>
+              <div key={teacher.id} id={styles.teacherIcon}>
                 <img src={teacher.photo} alt="" />
                 <h5>{teacher.name}</h5>
               </div>
@@ -45,7 +44,6 @@ function CoursePage() {
           </div>
         </div>
       </div>
-
     </section>
 
   );

@@ -80,3 +80,34 @@ footer ul li a {
     margin-bottom: 0%;
     align-self: end;
 }
+
+@media screen and (max-width: 780px){
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray200);
+    color: whitesmoke;
+    padding: 48px 0px 0px 0px;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 32apx;
+    font-size: 10px;
+}
+
+#logoFooter{
+   height: auto;
+   width: 200px;
+   align-self: center;
+}
+
+#menuFooter {
+    margin: 12px 12px;
+}
+
+#socialMediaFooter {
+    margin: 12px 12px;
+    text-align: left;
+}
+}

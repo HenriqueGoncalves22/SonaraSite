@@ -5,7 +5,7 @@ function AboutPage() {
   return (
     <>
       <section id={styles.history}>
-        <img src="/assets/sonara-hero.png"/>
+        <img src="assets/sonara-hero.png"/>
         <div id={styles.historyContent}>
           <h2>Nossa História</h2>
           <p> A Sonara nasceu com o propósito de criar um espaço onde aprender música fosse uma experiência acessível, criativa e significativa. <br />

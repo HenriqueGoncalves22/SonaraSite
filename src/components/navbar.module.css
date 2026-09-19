@@ -17,8 +17,6 @@
     height: 40px;
 }
 
-
-
 .navbar ul li {
     display: inline;
     padding: 16px;
@@ -34,4 +32,47 @@
 .navbar ul li a:hover {
     font-size: 19px;
     color: var(--purple400);
+}
+
+#btnMenu, #menuClose{
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    #btnMenu{  
+    display: block;
+    color: "#5b21b6";
+    border: none;
+    background-color: transparent;
+    }
+
+    #btnMenu svg{  
+    height: 30px;
+    }
+
+    .navMenu{
+        display: none;
+    }
+
+    .menuOpen{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 50vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        padding-top: 72px;
+    }
+
+    #menuClose{
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        height: 30px;
+        width: fit-content;
+        border: none;
+    }
 }

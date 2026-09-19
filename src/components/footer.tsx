@@ -2,13 +2,12 @@ import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-sv
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
-import logo from "../../public/assets/logo.png";
 
 function FooterComponent(){
     return(
         <>
   <footer>
-          <img src="../../../public/assets/logo.png" alt="" id={styles.logoFooter}/>
+          <img src="assets/logo.png" alt="" id={styles.logoFooter}/>
           <div id={styles.contactFooter}>
             <h4>Contato</h4>
             <ul>

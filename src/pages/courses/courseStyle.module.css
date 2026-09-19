@@ -46,7 +46,11 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
-    margin-left: 16px;
+    margin-left: 10px;
+}
+
+#teacherIcon{
+    text-align: center;
 }
 
 #teacherContent{
@@ -55,5 +59,62 @@
 
 #teacherContent h4{
     font-weight: 400;
+}
+
+#additionalContent{
+    display: flex;
+}
+
+@media screen and (max-width: 780px) {
+   
+ #course h2{
+   font-size: 32px;
+}
+
+#courseContent{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#courseContent img{
+  object-fit: cover;
+  height: 30vh;
+  width: 100vw;
+  border-radius: 0 0 35px 35px;
+  top: 0;
+}
+
+#courseTable{
+margin: 12px;
+}
+
+#courseDescription{
+    margin: 0 8px;
+    white-space: pre-line;
+}
+
+#teacherGroup{
+    padding: 8px;
+    display: flex;
+}
+
+#teacherGroup img, #teacherGroup h5{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 16px;
+}
+
+#teacherContent{
+    margin-left: 8px;
+}
+
+#additionalContent{
+    display: flex;
+    flex-direction: column;
+}
 
 }

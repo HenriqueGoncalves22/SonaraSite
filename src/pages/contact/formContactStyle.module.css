@@ -37,3 +37,11 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 780px) {
+    #contactForm button {
+    width: 50vw;
+    height: 5vh;
+    justify-self: center;
+}
+}
+

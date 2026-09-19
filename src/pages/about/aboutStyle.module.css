@@ -79,3 +79,84 @@
 #future p {
     line-height: 1.7;
 }
+
+@media screen and (max-width: 780px) {
+    #history {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+}
+
+#history img {
+    width: 100vw;
+    height: 35vh;
+    border-radius: 0 0 50px 50px;
+}
+
+#historyContent h2, #proposal h2, #mission h2, #future h2{
+    font-size: 40px;
+}
+
+#proposalCards h3{
+    font-size: 32px;
+}
+
+#historyContent{
+    padding: 18px;
+}
+
+#historyContent p{
+    font-size: 18px;
+}
+
+#proposal {
+    padding: 40px 10%;
+}
+
+#proposalCards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-row: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#proposalCards article {
+    padding: 16px;
+    width: 60vw;
+    justify-self: center;
+}
+
+#proposalCards span {
+    font-size: 2rem;
+}
+
+#mission p {
+    font-size: 1rem;
+}
+
+#mission {
+    padding: 50px 24px;
+}
+
+#future {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 80px 10%;
+    align-items: center;
+}
+
+#future img {
+    height: 90%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#future p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+}

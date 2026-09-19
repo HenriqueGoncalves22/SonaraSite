@@ -15,6 +15,7 @@ function Events() {
                         Mais do que uma apresentação, é uma oportunidade para colocar em prática tudo aquilo que acontece dentro da sala de aula. Cada aluno encontra seu espaço para interpretar, experimentar e dividir com outras pessoas aquilo que vem construindo ao longo de sua jornada musical.</p>
                 </div>
             </section>
+            <hr />
             <section className={styles.show}>
                 <div className={styles.showContent}>
                     <h3>Show de Rock</h3>

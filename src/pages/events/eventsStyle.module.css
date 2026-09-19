@@ -29,10 +29,6 @@
     font-size: clamp(16px, 1.3vw, 22px);
 }
 
-#orchestra{
-
-}
-
 #orchestra img{
     width: 100vw;
     height: 50vh;
@@ -48,3 +44,37 @@
 #orchestraContent h3{
     color: var(--purple);
 }
+
+@media screen and (max-width: 780px) {
+
+    #heroEvents{
+        height: 15vh;
+    }
+#heroEvents h2{
+    font-size: 40px;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.show img{
+    object-fit: cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+#orchestra img{
+    height: 50vh;
+}
+
+#orchestraContent{
+    height: 50vh;
+}
+
+#orchestraContent h3{
+    font-size: 40px;
+}
+}
+
