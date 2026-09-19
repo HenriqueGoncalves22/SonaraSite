@@ -1,4 +1,4 @@
-#heroEvents{
+#heroEvents {
     height: 25vh;
     justify-content: center;
     align-content: center;
@@ -7,74 +7,82 @@
     background-size: cover;
 }
 
-#heroEvents h2{
+#heroEvents h2 {
     color: white;
 }
 
-.show{
+.show {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.show img{
+.show img {
     width: 50vw;
 }
 
-.showContent{
+.showContent {
     padding: 24px;
     align-content: center;
 }
 
-#event p{
+#event p {
     font-size: clamp(16px, 1.3vw, 22px);
 }
 
-#orchestra img{
+#orchestra img {
     width: 100vw;
     height: 50vh;
     object-fit: cover;
 }
 
-#orchestraContent{
+#orchestraContent {
     padding: 24px;
     align-content: center;
     height: 30vh;
 }
 
-#orchestraContent h3{
+#orchestraContent h3 {
     color: var(--purple);
+}
+
+hr{
+    display: none;
 }
 
 @media screen and (max-width: 780px) {
 
-    #heroEvents{
+    hr{
+    display: block;
+}
+
+    #heroEvents {
         height: 15vh;
     }
-#heroEvents h2{
-    font-size: 40px;
-}
 
-.show{
-    display: flex;
-    flex-direction: column;
-}
+    #heroEvents h2 {
+        font-size: 40px;
+    }
 
-.show img{
-    object-fit: cover;
-    width: 100vw;
-    height: 40vh;
-}
+    .show {
+        display: flex;
+        flex-direction: column;
+    }
 
-#orchestra img{
-    height: 50vh;
-}
+    .show img {
+        object-fit: cover;
+        width: 100vw;
+        height: 40vh;
+    }
 
-#orchestraContent{
-    height: 50vh;
-}
+    #orchestra img {
+        height: 50vh;
+    }
 
-#orchestraContent h3{
-    font-size: 40px;
-}
-}
+    #orchestraContent {
+        height: fit-content;
+    }
 
+    #orchestraContent h3 {
+        font-size: 40px;
+    }
+}
